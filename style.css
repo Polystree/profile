@@ -1,0 +1,212 @@
+html {
+  font-family: "Nunito";
+  transition: 0.3s;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+div {
+	-webkit-tap-highlight-color: unset;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+header > nav > a {
+  color: inherit;
+}
+
+button {
+  background: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav > a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#logo {
+  width: 50px;
+}
+
+#title {
+  font-size: 24px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 12px 12px;
+  padding: 20px;
+  font-size: var(--subtext);
+  font-weight: 600;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.sectionA {
+  height: 90vh;
+}
+
+.sectionB {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+}
+
+.card {
+  background: var(--prm-btn);
+  margin: 50px;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 50px 0 50px;
+}
+
+.clock {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titledesc,
+.greetings {
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.greetings {
+  font-weight: 600;
+  transition: font-size 0.5s linear;
+}
+
+.titledesc {
+  font-size: 3rem;
+}
+
+.cardtitle {
+  font-size: 5rem;
+  font-weight: 600;
+  padding: 24px;
+  text-align: center;
+}
+
+.desc {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#text-input, #message {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px 16px;
+  outline: none;
+  background: inherit;
+  color: inherit;
+  margin-top: 4px;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 15vh;
+  max-height: 50vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius:0 4px 0 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+
+  header {
+    margin: 25px 25px;
+  }
+
+  #title, .WIP {
+    display: none;
+  }
+
+  .sectionA {
+    height: 75vh;
+  }
+
+  .titledesc {
+    font-size: 2rem;
+  }
+
+  .cardtitle {
+    font-size: 3rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+}
